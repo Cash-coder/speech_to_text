@@ -48,8 +48,14 @@ def print_help():
 def create_driver():
     import undetected_chromedriver as uc
 
-    driver = uc.Chrome(headless=True, use_subprocess=False)
+    opts = uc.ChromeOptions()
+    opts.headless=True
+    opts.add_argument('--headless')
+
+    # driver = uc.Chrome(headless=True, use_subprocess=False)
+    driver = uc.Chrome(options=opts)
     # driver.maximize_window()
+
 
     return driver
 

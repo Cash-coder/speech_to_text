@@ -1,12 +1,13 @@
 from selenium.webdriver.common.by import By
+from selenium.webdriver import Keys
 from time import sleep
 import pyperclip
 import keyboard
 import pyautogui
 # from selenium.webdriver.common.alert import Alert
 # from selenium.webdriver.chrome.options import Options
-# from selenium.webdriver.common.action_chains import ActionChains
-# from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.common.keys import Keys
 # from selenium.webdriver.support.ui import WebDriverWait
 # from selenium.webdriver.support import expected_conditions as EC
 # from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
@@ -14,7 +15,7 @@ import pyautogui
 # import time
 
 
-# C:\Users\smart\PycharmProjects\speech_to_text_app\venv\Scripts>activate.bat
+# service_args, to force headless
 
 TARGET_URL = 'https://speechnotes.co/dictate/'
 XPATH_LIBRARY = {
@@ -46,19 +47,104 @@ def print_help():
 
 
 def create_driver():
-    import undetected_chromedriver as uc
+    from selenium import webdriver
+    from selenium.webdriver.chrome.service import Service
+    # from webdriver_manager.chrome import ChromeDriverManager
 
-    opts = uc.ChromeOptions()
-    opts.headless=True
-    opts.add_argument('--headless')
+    # import undetected_chromedriver as uc
+    # opts = uc.ChromeOptions()
+    # opts.headless=True
+    # opts.add_argument('--headless')
+    # opts.add_argument('--disable-gpu')
+    # driver = uc.Chrome(options=opts)
 
     # driver = uc.Chrome(headless=True, use_subprocess=False)
-    driver = uc.Chrome(options=opts)
+    # driver.maximize_window()
+
+    # opts = webdriver.ChromeOptions()
+
+
+
+    from selenium import webdriver
+    # from selenium.webdriver.chrome.options import Options
+    from selenium.webdriver import ChromeOptions
+
+    options = ChromeOptions()
+    # enable headless mode in Selenium
+    # options = Options()
+    # options.headless = True
+
+
+    # options.add_argument('--headless')
+
+
+    # options.add_argument("--headless=new")
+    # options.add_argument("--headless=old")
+    # options.add_argument("--headless=chrome")
+    options.add_argument("--window-size=1920,1080")
+    options.add_argument("--disable-web-security")
+    options.add_argument("--no-default-browser-check")
+    # options.add_argument("--disable-webgl")
+    options.add_argument('--no-sandbox')
+    options.add_argument('--incognito')
+    # options.add_argument('-–disable-gpu')
+    # options.add_argument('--disable-dev-shm-usage')
+    options.add_argument("--start-maximized")
+    options.add_experimental_option("prefs", {
+        "profile.default_content_setting_values.media_stream_mic": 2
+    })
+
+    options.add_argument('--user-data-dir=C:\\Users\\smart\\AppData\\Local\\Google\\Chrome\\User Data\\Default.')
+    options.add_argument('--use-fake-ui-for-media-stream')
+    options.add_argument('--use-fake-device-for-media-stream')
+    options.add_argument('--allow-file-access-from-files')
+
+    # options.binary_location = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+    path = r"C:\Users\smart\Downloads\chromedriver_win32\chromedriver.exe"
+
+    # path = r"C:\Users\smart\Downloads\chromedriver_win32\chromedriver.exe"
+    # driver = webdriver.Chrome(executable_path=path, chrome_options=options)
+    # driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+
+    service = Service(executable_path=path)
+
+    driver = webdriver.Chrome(
+        options=options,
+        service=service,
+        # other properties...
+    )
+
     # driver.maximize_window()
 
 
+    # service = Service (executable_path=ChromeDriverManager().install() )
+    # return webdriver.Chrome(service=service, options=options)
+
     return driver
 
+def create_driver_2():
+    from selenium import webdriver
+    from selenium.webdriver.chrome.service import Service
+    # from webdriver_manager.chrome import ChromeDriverManager
+
+    # import undetected_chromedriver as uc
+    # opts = uc.ChromeOptions()
+
+
+    bin_path = r"C:\Users\smart\Downloads\c_109\chrome-win\chrome.exe"
+    driv_path = r"C:\Users\smart\Downloads\w113\chrome-win\chrome.exe"
+
+    options = Options()
+    # options.headless = True
+    # options.add_argument('--headless')
+    # options.add_argument("--headless=new")
+
+    options.binary_location = bin_path
+    dService = Service(driv_path)
+
+    driver = webdriver.Chrome(service=dService, options=options)
+
+    return driver
 
 def read_user_input():
     return input("Enter function to run, q for exit, h for help: ")
@@ -129,18 +215,35 @@ def record_and_paste():
 
     # start recording
     d.find_element(By.XPATH, XPATH_LIBRARY['record_button']).click()
+    print('first')
 
+    # actions = ActionChains(d)
+    # button = d.find_element(By.XPATH, XPATH_LIBRARY['record_button'])
+    # actions.move_to_element(button).send_keys(Keys.ENTER).perform()
+
+    d.save_screenshot("screenshot.png")
+    print('screenshot taken')
     text = get_text()
+    print('second')
+
 
     paste_text(text)
 
     # stop recording
     d.find_element(By.XPATH, XPATH_LIBRARY['record_button']).click()
+    # d.find_element(By.XPATH, XPATH_LIBRARY['record_button']).send_keys(Keys.RETURN)
+    # button = d.find_element(By.XPATH, XPATH_LIBRARY['record_button'])
+    # actions.move_to_element(button).send_keys(Keys.ENTER).perform()
+
 
 
 def get_text():
     tm = d.find_element(By.XPATH, XPATH_LIBRARY['text_mirror'])
-    wait_until_started_to_change(tm)
+    print(tm)
+    print('<' + tm.text+ '>')
+
+    wait_until_started_to_change(XPATH_LIBRARY['text_mirror'])
+    print('third')
 
     text_chain = []
 
@@ -160,10 +263,16 @@ def get_text():
                 return text_chain[-1]
 
 
-def wait_until_started_to_change(element):
+def wait_until_started_to_change(xpath_element):
+    n = 0
     while True:
         sleep(0.1)
+        n += 1
+        element = d.find_element(By.XPATH, xpath_element)
         if element.text != '':
+            return
+        elif n > 70:
+            print('element not changed after ' + str(n) + ' iterations')
             return
 
 
@@ -180,6 +289,8 @@ def close_driver(d):
 def run():
     global d  # used to allow to assign variables in exec()
     d = create_driver()
+    # d = create_driver_2()
+
     d.get(TARGET_URL)
     grant_permissions()  # microphone, geo location, camera
 

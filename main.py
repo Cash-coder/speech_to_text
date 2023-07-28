@@ -1,28 +1,20 @@
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.alert import Alert
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 from time import sleep
-from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 import pyperclip
-import subprocess
 import keyboard
 import pyautogui
-import time
+# from selenium.webdriver.common.alert import Alert
+# from selenium.webdriver.chrome.options import Options
+# from selenium.webdriver.common.action_chains import ActionChains
+# from selenium.webdriver.common.keys import Keys
+# from selenium.webdriver.support.ui import WebDriverWait
+# from selenium.webdriver.support import expected_conditions as EC
+# from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+# import subprocess
+# import time
 
 
-# should measure that rare text change
-# use API
-# -remove the a
-# - with exec ?
-# -sending chain as argument
-# - con alt shift to back cursor to last position
-
-# take text, add to list, until text is empty, take second to last
-
+# C:\Users\smart\PycharmProjects\speech_to_text_app\venv\Scripts>activate.bat
 
 TARGET_URL = 'https://speechnotes.co/dictate/'
 XPATH_LIBRARY = {
@@ -57,7 +49,7 @@ def create_driver():
     import undetected_chromedriver as uc
 
     driver = uc.Chrome(headless=True, use_subprocess=False)
-    driver.maximize_window()
+    # driver.maximize_window()
 
     return driver
 
@@ -66,6 +58,7 @@ def read_user_input():
     return input("Enter function to run, q for exit, h for help: ")
 
 
+# only for testing
 def execute_func(func):
     try:
         print("executing: " + func + "\n")
@@ -74,7 +67,7 @@ def execute_func(func):
         print("\n" + str(e) + "\n")
         pass
 
-
+# only for testing
 def function_parser(func):
     if func.lower() in ("quit", "q", "exit"):
         return 'q'
@@ -99,6 +92,7 @@ def function_parser(func):
     return func
 
 
+# only for testing
 def execution_wheel(d):
     while True:
 
@@ -139,7 +133,6 @@ def record_and_paste():
 
 
 def get_text():
-    # tm = text_mirror
     tm = d.find_element(By.XPATH, XPATH_LIBRARY['text_mirror'])
     wait_until_started_to_change(tm)
 

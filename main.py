@@ -24,7 +24,7 @@ def create_driver():
 
     options = uc.ChromeOptions()
     options.headless = True
-    options.add_argument('--headless')
+    options.add_argument('--headless=new')
     options.add_argument("--no-default-browser-check")
     options.add_argument('--no-sandbox')
     options.add_argument("--start-maximized")
@@ -111,7 +111,7 @@ def run():
 
     grant_permissions(d)  # microphone, geo location, camera
 
-    keyboard.add_hotkey('ctrl+shift+ñ', record_and_paste(d))
+    keyboard.add_hotkey('ctrl+shift+ñ', lambda: record_and_paste(d))
 
     while True:
 

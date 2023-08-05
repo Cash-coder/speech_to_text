@@ -3,6 +3,7 @@ from selenium.webdriver import Keys
 from time import sleep
 import pyperclip
 import keyboard
+import os  # to remove screenshot in testing mode
 import pyautogui
 # from selenium.webdriver.common.alert import Alert
 # from selenium.webdriver.chrome.options import Options
@@ -75,7 +76,7 @@ def create_driver():
     # options.headless = True
 
 
-    # options.add_argument('--headless')
+    options.add_argument('--headless')
 
 
     # options.add_argument("--headless=new")
@@ -116,6 +117,7 @@ def create_driver():
     )
 
     # driver.maximize_window()
+    driver.set_window_size(800, 1200)
 
 
     # service = Service (executable_path=ChromeDriverManager().install() )
@@ -144,6 +146,36 @@ def create_driver_2():
     dService = Service(driv_path)
 
     driver = webdriver.Chrome(service=dService, options=options)
+
+    return driver
+
+
+#  undetectable driver
+def create_driver_3():
+    import undetected_chromedriver as uc
+
+    options = uc.ChromeOptions()
+    options.headless=True
+    options.add_argument('--headless')
+    # options.add_argument("--headless=new")
+    # options.add_argument("--headless=old")
+    # options.add_argument("--headless=chrome")
+    options.add_argument("--window-size=500,600")
+
+    options.add_argument("--disable-web-security")
+    options.add_argument("--no-default-browser-check")
+    # options.add_argument("--disable-webgl")
+    options.add_argument('--no-sandbox')
+    # options.add_argument('--incognito')
+    # options.add_argument('-–disable-gpu')
+    # options.add_argument('--disable-dev-shm-usage')
+    options.add_argument("--start-maximized")
+    options.add_experimental_option("prefs", {
+        "profile.default_content_setting_values.media_stream_mic": 2
+    })
+
+    driver = uc.Chrome(options=options)
+
 
     return driver
 
@@ -184,6 +216,11 @@ def function_parser(func):
 
     return func
 
+def remove_screenshot():
+    try:
+        os.remove('screenshot.png')
+    except:
+        pass
 
 # only for testing
 def execution_wheel(d):
@@ -216,7 +253,8 @@ def record_and_paste():
 
     # start recording
     d.find_element(By.XPATH, XPATH_LIBRARY['record_button']).click()
-    print('first')
+    print('clicked record button')
+    remove_screenshot()
 
     # actions = ActionChains(d)
     # button = d.find_element(By.XPATH, XPATH_LIBRARY['record_button'])
@@ -225,7 +263,6 @@ def record_and_paste():
     d.save_screenshot("screenshot.png")
     print('screenshot taken')
     text = get_text()
-    print('second')
 
 
     paste_text(text)
@@ -240,13 +277,9 @@ def record_and_paste():
 
 def get_text():
     tm = d.find_element(By.XPATH, XPATH_LIBRARY['text_mirror'])
-    print(tm)
-    print('<' + tm.text+ '>')
-
     wait_until_started_to_change(XPATH_LIBRARY['text_mirror'])
-    print('third')
-
     text_chain = []
+
 
     while True:
 
@@ -289,8 +322,9 @@ def close_driver(d):
 
 def run():
     global d  # used to allow to assign variables in exec()
-    d = create_driver()
+    # d = create_driver()
     # d = create_driver_2()
+    d = create_driver_3()
 
     d.get(TARGET_URL)
     grant_permissions()  # microphone, geo location, camera
@@ -307,7 +341,7 @@ def run():
 
         keyboard.wait('esc')  # trigger shortcut
 
-        i = input("Enter additional data (or 'exit' to stop): ")
+        i = input("Trigger with shortcut Control + Shit + ñ or ('exit' to stop): ")
         if i == 'q':
             print('exiting ... ')
             break

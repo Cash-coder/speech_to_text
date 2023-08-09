@@ -94,8 +94,14 @@ def wait_until_started_to_change(d, xpath_element):
 
 
 def paste_text(text):
+    # copy old clipboard to avoid the user from having the same text twice when pasting
+    old_clipboard = pyperclip.paste()
+
     pyperclip.copy(text)
     pyautogui.hotkey('ctrl', 'v')
+
+    pyperclip.copy(old_clipboard)
+
 
 
 def close_driver(d):

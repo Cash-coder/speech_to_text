@@ -1,3 +1,4 @@
+from selenium.common import WebDriverException
 from selenium.webdriver.common.by import By
 from time import sleep
 import pyperclip
@@ -33,6 +34,8 @@ def create_driver():
     })
 
     driver = uc.Chrome(options=options)
+
+    print('driver created')
 
     return driver
 
@@ -109,7 +112,6 @@ def close_driver(d):
 
 
 def run():
-
     d = create_driver()
 
     d.get(TARGET_URL)
@@ -119,8 +121,12 @@ def run():
     keyboard.add_hotkey('ctrl+shift+ñ', lambda: record_and_paste(d))
 
     while True:
-
-        keyboard.wait('esc')  # trigger shortcut
+        try:
+            keyboard.wait('esc')  # trigger shortcut
+        except Exception as e:
+            print(e)
+            close_driver(d)
+            break
 
 
 if __name__ == '__main__':

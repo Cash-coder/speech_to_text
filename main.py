@@ -103,7 +103,6 @@ def paste_text(text):
     pyperclip.copy(old_clipboard)
 
 
-
 def close_driver(d):
     d.close()
     d.quit()

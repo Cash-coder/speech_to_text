@@ -11,7 +11,11 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
 
 
-TARGET_URL = 'https://speechnotes.co/dictate/'
+TARGET_URLS = {
+    'dictation_url': 'https://speechnotes.co/dictate/',
+    'grammar_url': 'https://www.deepl.com/write'
+}
+
 XPATH_LIBRARY = {
     'record_button': '//div[@id="start_button"]',
     'text_area': '//div[@id="output_box"]/textarea',
@@ -44,7 +48,7 @@ def grant_permissions(d):
     d.execute_cdp_cmd(
         "Browser.grantPermissions",
         {
-            "origin": TARGET_URL,  # e.g https://www.google.com
+            "origin": TARGET_URLS['dictation_url'],
             "permissions": ["geolocation", "audioCapture", "displayCapture", "videoCapture",
                             "videoCapturePanTiltZoom"]
         },
@@ -62,6 +66,29 @@ def record_and_paste(d):
 
     # stop recording
     d.find_element(By.XPATH, XPATH_LIBRARY['record_button']).click()
+
+    print_grammar_correction(d, text)
+
+
+def print_grammar_correction(d, text):
+
+    # open grammar page
+    d.get(TARGET_URLS['grammar_url'])
+
+    # paste text
+    d.find_element(By.XPATH, '//textarea').send_keys(text)
+
+    # wait for grammar correction
+    sleep(1)
+
+    # get corrected text
+    corrected_text = d.find_element(By.XPATH, '//textarea').text
+
+    # paste corrected text
+    paste_text(corrected_text)
+
+    # go back to dictation page
+    d.get(TARGET_URLS['dictation_url'])
 
 
 def get_text(d):
@@ -111,10 +138,19 @@ def close_driver(d):
     d.quit()
 
 
+def open_tabs(d):
+    d.execute_script("window.open('');")
+    d.switch_to.window(d.window_handles[1])
+    d.get(TARGET_URLS['grammar_url'])
+    d.switch_to.window(d.window_handles[0])
+
+
 def run():
     d = create_driver()
 
-    d.get(TARGET_URL)
+    open_tabs(d)  # open dictation and grammar tabs
+
+    d.get(TARGET_URLS['dictation_url'])
 
     grant_permissions(d)  # microphone, geo location, camera
 

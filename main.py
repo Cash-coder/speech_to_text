@@ -67,7 +67,7 @@ def record_and_paste(d):
     # stop recording
     d.find_element(By.XPATH, XPATH_LIBRARY['record_button']).click()
 
-    print_grammar_correction(d, text)
+    # print_grammar_correction(d, text)
 
 
 def print_grammar_correction(d, text):

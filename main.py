@@ -9,6 +9,7 @@ import pyautogui
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
 
+#asd
 
 TARGET_URLS = {
     'dictation_url': 'https://speechnotes.co/dictate/',

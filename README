@@ -3,10 +3,12 @@ Execute from terminal, letting it open and minized
 Use shortcut Control + Shit + ñ to trigger (or change ñ for another free character).
 
 --- future improvements ---
-- underline changes printed by grammar (gpt func) - important for typos!
-- very good pronunciation api  (text to speech), that exaggerates a bit (gpt) (speechify has several voices with different accents gi)
+- underline changes printed by grammar (gpt func) - important for typos!, with gpt
+- very good pronunciation api  (text to speech),gpt!,  that exaggerates a bit (gpt) (speechify has several voices with different accents gi)
 - Capacity to train with that word or phrase
   - connect chatgpt api, ask: "Why do you think I've made that mistake and propose a trainning to improve" -> Creates training in real time through CLI
+    -say the same in 5 other ways
+        -what's the most american way of saying this "..." ?
     - express the same but make it sound more standard american english
     - can i use some phrasal verb in this sentence ?
   - gpt api: make more concise, even (that spartan word for being extremely concise, laconic?)
@@ -14,4 +16,3 @@ Use shortcut Control + Shit + ñ to trigger (or change ñ for another free chara
     - CLI options: j = make a joke about it | Make it sound more funny | p = make it sound more professional (for a business environment)
   - multiprocessing ? ie: main process runs with only speech to text, ready for next input, while the others do the rest
 
- - For other language: When I read a book in half english + half spanish -> you learn when you understand (so first know what it means, then read it, repeat = patterns)

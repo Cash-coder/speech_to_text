@@ -4,11 +4,13 @@ from time import sleep
 import pyperclip
 import keyboard
 import pyautogui
+import logging
 # from selenium.webdriver.common.alert import Alert
 # from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
 
+logging.basicConfig(filename='logs', level=logging.DEBUG)
 
 TARGET_URLS = {
     'dictation_url': 'https://speechnotes.co/dictate/',
@@ -38,7 +40,7 @@ def create_driver():
 
     driver = uc.Chrome(options=options)
 
-    print('driver created')
+    logging.debug('driver created')
 
     return driver
 
@@ -47,9 +49,12 @@ def create_normal_driver():
     from selenium import webdriver
     from selenium.webdriver.chrome.service import Service
     from webdriver_manager.chrome import ChromeDriverManager
-    # from webdriver_manager.firefox import GeckoDriverManager
 
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))  #, options=chrome_options)
+    opts = webdriver.ChromeOptions()
+    opts.add_argument('--headless=new')
+    # opts.add_argument('--disable-gpu')
+
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=opts)  #, options=chrome_options)
     return driver
 
 
@@ -128,7 +133,7 @@ def wait_until_started_to_change(d, xpath_element):
         if element.text != '':
             return
         elif n > 70:
-            print('element not changed after ' + str(n) + ' iterations')
+            logging.debug('element not changed after ' + str(n) + ' iterations')
             return
 
 
@@ -186,11 +191,12 @@ def run():
 
     grant_permissions(d)  # microphone, geo location, camera
 
-    open_second_tab(d, TARGET_URLS['grammar_url']) # open grammar tab
+    # open_second_tab(d, TARGET_URLS['grammar_url']) # open grammar tab
 
-    switch_to_american_english(d)
+    # switch_to_american_english(d)
 
     keyboard.add_hotkey('ctrl+shift+ñ', lambda: execute_iteration(d))
+
 
     while True:
         try:

@@ -1,19 +1,26 @@
-This is an MVP for personal use only.
-Execute from terminal, letting it open and minimized
-Use shortcut Control + Shit + ñ to trigger (or change ñ for another free character).
+Speech to text integrated with your computer,
+It transforms what you say into text, and pastes it and your mouse position.
+MVP for private use (Non Commercial).
+
+
+Instructions:
+1 Open terminal
+2 Activate environment
+3 Run main.py
+4 Let terminal running (minimize if needed)
+5 Speak, see the transcription at your mouse position
+6 If needed, restart with a keyboard shortcut: Control + Shift + ñ
+
 
 --- future improvements ---
-- non stop listening, so you don't have to constantly press the shortcut key
-- underline changes printed by grammar (gpt func) - important for typos!, with gpt
-- very good pronunciation api  (text to speech),gpt!,  that exaggerates a bit (gpt) (speechify has several voices with different accents gi)
+- grammar recommendations (GPT)
+- Correct Pronunciation of what you've said (for english learners): pronunciation api
 - Capacity to train with that word or phrase
   - connect chatgpt api, ask: "Why do you think I've made that mistake and propose a trainning to improve" -> Creates training in real time through CLI
     -say the same in 5 other ways
         -what's the most american way of saying this "..." ?
-    - express the same but make it sound more standard american english
-    - can i use some phrasal verb in this sentence ?
-  - gpt api: make more concise, even (that spartan word for being extremely concise, laconic?)
-    - say the same in different ways (to see variations)
-    - CLI options: j = make a joke about it | Make it sound more funny | p = make it sound more professional (for a business environment)
-  - multiprocessing ? ie: main process runs with only speech to text, ready for next input, while the others do the rest
+    - express the same but make it sound more standard american english (make it sound more natural)
+  - gpt api: make more concise, laconic.
+    - change tone, more professional or more friendly
+     - CLI options: j = make a joke about it | Make it sound more funny | p = make it sound more professional (for a business environment)
 

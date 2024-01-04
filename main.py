@@ -1,14 +1,15 @@
-from selenium.common import WebDriverException
 from selenium.webdriver.common.by import By
 from time import sleep
 import pyperclip
 import keyboard
 import pyautogui
 import logging
+# from selenium.common import WebDriverException
 # from selenium.webdriver.common.alert import Alert
 # from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.common.keys import Keys
+# from selenium.webdriver.common.action_chains import ActionChains
+# from selenium.webdriver.common.keys import Keys
+
 
 logging.basicConfig(filename='logs', level=logging.DEBUG)
 

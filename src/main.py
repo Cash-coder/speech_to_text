@@ -1,11 +1,11 @@
-from utils.lib.driver import create_normal_driver, grant_permissions, close_driver
-from utils.config import TARGET_URLS, XPATH_LIBRARY
-from utils.lib.text import get_text, paste_text
+from speech_to_text.src.utils.lib.driver import create_normal_driver, grant_permissions
+from speech_to_text.src.utils.config import TARGET_URLS, XPATH_LIBRARY
+from speech_to_text.src.utils.lib.text import get_text, paste_text
 from selenium.webdriver.common.by import By
 from time import sleep
 import logging
 
-logging.basicConfig(filename='logs.log', level=logging.DEBUG)
+logging.basicConfig(filename='../logs.log', level=logging.DEBUG)
 
 
 def press_record_btn(d):

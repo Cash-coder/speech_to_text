@@ -101,7 +101,6 @@ def print_grammar_correction(d, text):
 
     # clean input field for next grammar correction
 
-
     switch_tabs(d)
 
 

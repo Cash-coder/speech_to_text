@@ -1,8 +1,9 @@
 This is an MVP for personal use only.
-Execute from terminal, letting it open and minized
+Execute from terminal, letting it open and minimized
 Use shortcut Control + Shit + ñ to trigger (or change ñ for another free character).
 
 --- future improvements ---
+- non stop listening, so you don't have to constantly press the shortcut key
 - underline changes printed by grammar (gpt func) - important for typos!, with gpt
 - very good pronunciation api  (text to speech),gpt!,  that exaggerates a bit (gpt) (speechify has several voices with different accents gi)
 - Capacity to train with that word or phrase

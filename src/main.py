@@ -1,6 +1,6 @@
-from speech_to_text.src.utils.lib.driver import create_normal_driver, grant_permissions
-from speech_to_text.src.utils.config import TARGET_URLS, XPATH_LIBRARY
-from speech_to_text.src.utils.lib.text import get_text, paste_text
+from utils.lib.driver import create_normal_driver, grant_permissions
+from utils.config import TARGET_URLS, XPATH_LIBRARY
+from utils.lib.text import get_text, paste_text
 from selenium.webdriver.common.by import By
 from time import sleep
 import logging

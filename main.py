@@ -183,6 +183,12 @@ def switch_to_american_english(d):
     d.find_element(By.XPATH, '//span[contains(text(), "American")]').click()
 
 
+def press_record_btn(d):
+    sleep(2)
+    d.find_element(By.XPATH, XPATH_LIBRARY['record_button']).click()
+    print('\nProgram running\n')
+
+
 def run():
     # d = create_driver()
     d = create_normal_driver()
@@ -195,8 +201,9 @@ def run():
 
     # switch_to_american_english(d)
 
-    keyboard.add_hotkey('ctrl+shift+ñ', lambda: execute_iteration(d))
+    press_record_btn(d)
 
+    keyboard.add_hotkey('ctrl+shift+ñ', lambda: execute_iteration(d))
 
     while True:
         try:

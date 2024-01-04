@@ -4,23 +4,9 @@ MVP for private use (Non Commercial).
 
 
 Instructions:
-1 Open terminal
-2 Activate environment
-3 Run main.py
+1 Open terminal and go to project folder
+2 Activate environment (for windows): venv/Scripts/activate
+3 Run program with: python main.py
 4 Let terminal running (minimize if needed)
 5 Speak, see the transcription at your mouse position
-6 If needed, restart with a keyboard shortcut: Control + Shift + ñ
-
-
---- future improvements ---
-- grammar recommendations (GPT)
-- Correct Pronunciation of what you've said (for english learners): pronunciation api
-- Capacity to train with that word or phrase
-  - connect chatgpt api, ask: "Why do you think I've made that mistake and propose a trainning to improve" -> Creates training in real time through CLI
-    -say the same in 5 other ways
-        -what's the most american way of saying this "..." ?
-    - express the same but make it sound more standard american english (make it sound more natural)
-  - gpt api: make more concise, laconic.
-    - change tone, more professional or more friendly
-     - CLI options: j = make a joke about it | Make it sound more funny | p = make it sound more professional (for a business environment)
-
+6 Control C to stop execution

@@ -1,0 +1,13 @@
+
+--- future improvements ---
+- grammar recommendations (GPT)
+- Correct Pronunciation of what you've said (for english learners): pronunciation api
+- Capacity to train with that word or phrase
+  - connect chatgpt api, ask: "Why do you think I've made that mistake and propose a trainning to improve" -> Creates training in real time through CLI
+    -say the same in 5 other ways
+        -what's the most american way of saying this "..." ?
+    - express the same but make it sound more standard american english (make it sound more natural)
+  - gpt api: make more concise, laconic.
+    - change tone, more professional or more friendly
+     - CLI options: j = make a joke about it | Make it sound more funny | p = make it sound more professional (for a business environment)
+

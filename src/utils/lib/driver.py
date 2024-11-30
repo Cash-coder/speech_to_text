@@ -5,13 +5,14 @@ import logging
 logging.basicConfig(filename='logs.log', level=logging.INFO)
 
 
-def create_normal_driver():
+def create_normal_driver(headless= False):
     from selenium import webdriver
     from selenium.webdriver.chrome.service import Service
     from webdriver_manager.chrome import ChromeDriverManager
 
     opts = webdriver.ChromeOptions()
-    opts.add_argument('--headless=new')
+    if headless:
+        opts.add_argument('--headless=new')
     # opts.add_argument('--disable-gpu')
 
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=opts)  #, options=chrome_options)
@@ -19,12 +20,13 @@ def create_normal_driver():
 
 
 #  undetectable driver
-def create_driver():
+def create_driver(headless= False):
     import undetected_chromedriver as uc
 
     options = uc.ChromeOptions()
-    options.headless = True
-    options.add_argument('--headless=new')
+    if headless:
+        options.headless = True
+        options.add_argument('--headless=new')
     options.add_argument("--no-default-browser-check")
     options.add_argument('--no-sandbox')
     options.add_argument("--start-maximized")

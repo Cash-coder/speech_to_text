@@ -3,7 +3,7 @@ from ..config import XPATH_LIBRARY
 from time import sleep
 import logging
 import pyperclip
-import pyautogui
+import subprocess
 
 
 def get_text(d):
@@ -41,12 +41,53 @@ def wait_until_started_to_change(d, xpath_element):
             return
 
 
+
 def paste_text(text):
     # copy old clipboard to avoid the user from having the same text twice when pasting
-    old_clipboard = pyperclip.paste()
+    # old_clipboard = pyperclip.paste()
 
+    # copy text to clipboard
     pyperclip.copy(text)
-    pyautogui.hotkey('ctrl', 'v')
+    
+    # paste for windows
+    # pyautogui.hotkey('ctrl', 'v')
 
-    pyperclip.copy(old_clipboard)
+    # paste text,for linux hyprland
+    subprocess.run(["wtype", text])
+
+    # copy into the clipboard the previous content
+    # pyperclip.copy(old_clipboard)
+
+def paste_text_3(text):
+    process = subprocess.run(
+        #['echo', f'{text}', '|', 'wl-copy']
+        ['wl-copy'],
+        input=text.encode('utf-8'),  # Pass text to stdin
+        #stdin=subprocess.PIPE,
+        # stdout=subprocess.PIPE, 
+        # stderr=subprocess.PIPE,
+        # check=True
+    )
+    subprocess.run(["wtype", text]) 
+
+
+def paste_text_2(text):
+    try:
+        # Open a subprocess to call `wl-copy` and pass the text
+        process = subprocess.Popen(
+            ["wl-paste", "-p"],
+            stdin=subprocess.PIPE,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+        )
+        process.communicate(input=text.encode("utf-8"))
+        # Ensure the process exits without issues
+        if process.returncode != 0:
+            raise RuntimeError(f"wl-copy failed with error: {process.stderr.read().decode('utf-8')}")
+        print("Text copied to clipboard successfully!")
+    except Exception as e:
+        print(f"Error: {e}")
+
+# Example usage
+#copy_to_clipboard("Hello, Wayland clipboard!")
 

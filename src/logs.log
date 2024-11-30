@@ -1,0 +1,461 @@
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+INFO:WDM:Driver downloading response is 200
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver has been saved in cache [/home/ggk/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:There is no [linux64] chromedriver "130.0.6723.58" for browser google-chrome "130.0.6723" in cache
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:WebDriver version 130.0.6723.58 selected
+INFO:WDM:Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.58/linux64/chromedriver-linux64.zip
+INFO:WDM:About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.58/linux64/chromedriver-linux64.zip
+INFO:WDM:Driver downloading response is 200
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver has been saved in cache [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.58]
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.58/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.58/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.58/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.58/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.58/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.58/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.58/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.58/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.58/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.58/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.58/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.58/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.58/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:WebDriver version 130.0.6723.58 selected
+INFO:WDM:Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.58/linux64/chromedriver-linux64.zip
+INFO:WDM:About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.58/linux64/chromedriver-linux64.zip
+INFO:WDM:Driver downloading response is 200
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver has been saved in cache [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.58]
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.58/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.58/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:WebDriver version 130.0.6723.58 selected
+INFO:WDM:Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.58/linux64/chromedriver-linux64.zip
+INFO:WDM:About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.58/linux64/chromedriver-linux64.zip
+INFO:WDM:Driver downloading response is 200
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver has been saved in cache [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.58]
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:WebDriver version 130.0.6723.58 selected
+INFO:WDM:Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.58/linux64/chromedriver-linux64.zip
+INFO:WDM:About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.58/linux64/chromedriver-linux64.zip
+INFO:WDM:Driver downloading response is 200
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver has been saved in cache [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.58]
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.58/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.58/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.58/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:There is no [linux64] chromedriver "130.0.6723.69" for browser google-chrome "130.0.6723" in cache
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:WebDriver version 130.0.6723.69 selected
+INFO:WDM:Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.69/linux64/chromedriver-linux64.zip
+INFO:WDM:About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.69/linux64/chromedriver-linux64.zip
+INFO:WDM:Driver downloading response is 200
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver has been saved in cache [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.69]
+INFO:undetected_chromedriver.patcher:patching driver executable /home/ggk/.local/share/undetected_chromedriver/undetected_chromedriver
+INFO:uc:ensuring close
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:WebDriver version 130.0.6723.69 selected
+INFO:WDM:Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.69/linux64/chromedriver-linux64.zip
+INFO:WDM:About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.69/linux64/chromedriver-linux64.zip
+INFO:WDM:Driver downloading response is 200
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver has been saved in cache [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.69]
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.69/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.69/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:There is no [linux64] chromedriver "130.0.6723.91" for browser google-chrome "130.0.6723" in cache
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:WebDriver version 130.0.6723.91 selected
+INFO:WDM:Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.91/linux64/chromedriver-linux64.zip
+INFO:WDM:About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.91/linux64/chromedriver-linux64.zip
+INFO:WDM:Driver downloading response is 200
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver has been saved in cache [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.91]
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.91/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.91/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.91/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:WebDriver version 130.0.6723.91 selected
+INFO:WDM:Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.91/linux64/chromedriver-linux64.zip
+INFO:WDM:About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.91/linux64/chromedriver-linux64.zip
+INFO:WDM:Driver downloading response is 200
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver has been saved in cache [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.91]
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.91/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:WebDriver version 130.0.6723.91 selected
+INFO:WDM:Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.91/linux64/chromedriver-linux64.zip
+INFO:WDM:About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.91/linux64/chromedriver-linux64.zip
+INFO:WDM:Driver downloading response is 200
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver has been saved in cache [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.91]
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.91/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.91/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.91/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.91/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.91/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.91/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:WebDriver version 130.0.6723.91 selected
+INFO:WDM:Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.91/linux64/chromedriver-linux64.zip
+INFO:WDM:About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.91/linux64/chromedriver-linux64.zip
+INFO:WDM:Driver downloading response is 200
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver has been saved in cache [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.91]
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.91/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.91/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.91/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:WebDriver version 130.0.6723.91 selected
+INFO:WDM:Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.91/linux64/chromedriver-linux64.zip
+INFO:WDM:About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.91/linux64/chromedriver-linux64.zip
+INFO:WDM:Driver downloading response is 200
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver has been saved in cache [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.91]
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.91/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:WebDriver version 130.0.6723.91 selected
+INFO:WDM:Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.91/linux64/chromedriver-linux64.zip
+INFO:WDM:About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.91/linux64/chromedriver-linux64.zip
+INFO:WDM:Driver downloading response is 200
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver has been saved in cache [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.91]
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.91/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.91/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.91/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.91/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:There is no [linux64] chromedriver "130.0.6723.116" for browser google-chrome "130.0.6723" in cache
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:WebDriver version 130.0.6723.116 selected
+INFO:WDM:Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.116/linux64/chromedriver-linux64.zip
+INFO:WDM:About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.116/linux64/chromedriver-linux64.zip
+INFO:WDM:Driver downloading response is 200
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver has been saved in cache [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.116]
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:WebDriver version 130.0.6723.116 selected
+INFO:WDM:Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.116/linux64/chromedriver-linux64.zip
+INFO:WDM:About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.116/linux64/chromedriver-linux64.zip
+INFO:WDM:Driver downloading response is 200
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver has been saved in cache [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.116]
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:WebDriver version 130.0.6723.116 selected
+INFO:WDM:Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.116/linux64/chromedriver-linux64.zip
+INFO:WDM:About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.116/linux64/chromedriver-linux64.zip
+INFO:WDM:Driver downloading response is 200
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver has been saved in cache [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.116]
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:WebDriver version 130.0.6723.116 selected
+INFO:WDM:Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.116/linux64/chromedriver-linux64.zip
+INFO:WDM:About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.116/linux64/chromedriver-linux64.zip
+INFO:WDM:Driver downloading response is 200
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver has been saved in cache [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.116]
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:WebDriver version 130.0.6723.116 selected
+INFO:WDM:Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.116/linux64/chromedriver-linux64.zip
+INFO:WDM:About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.116/linux64/chromedriver-linux64.zip
+INFO:WDM:Driver downloading response is 200
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver has been saved in cache [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.116]
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.116/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:WebDriver version 130.0.6723.116 selected
+INFO:WDM:Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.116/linux64/chromedriver-linux64.zip
+INFO:WDM:About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.116/linux64/chromedriver-linux64.zip
+INFO:WDM:Driver downloading response is 200
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver has been saved in cache [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.116]
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:WebDriver version 130.0.6723.116 selected
+INFO:WDM:Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.116/linux64/chromedriver-linux64.zip
+INFO:WDM:About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.116/linux64/chromedriver-linux64.zip
+INFO:WDM:Driver downloading response is 200
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver has been saved in cache [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.116]
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.116/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:WebDriver version 130.0.6723.116 selected
+INFO:WDM:Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.116/linux64/chromedriver-linux64.zip
+INFO:WDM:About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.116/linux64/chromedriver-linux64.zip
+INFO:WDM:Driver downloading response is 200
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver has been saved in cache [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.116]
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.116/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:WebDriver version 130.0.6723.116 selected
+INFO:WDM:Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.116/linux64/chromedriver-linux64.zip
+INFO:WDM:About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.116/linux64/chromedriver-linux64.zip
+INFO:WDM:Driver downloading response is 200
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver has been saved in cache [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.116]
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.116/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.116/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.116/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.116/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.116/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.116/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.116/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.116/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.116/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.116/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.116/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.116/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.116/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.116/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:WebDriver version 130.0.6723.116 selected
+INFO:WDM:Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.116/linux64/chromedriver-linux64.zip
+INFO:WDM:About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.116/linux64/chromedriver-linux64.zip
+INFO:WDM:Driver downloading response is 200
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver has been saved in cache [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.116]
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.116/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/130.0.6723.116/chromedriver-linux64/chromedriver] found in cache

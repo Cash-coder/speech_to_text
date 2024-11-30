@@ -1,12 +1,23 @@
-Speech to text integrated with your computer,
-It transforms what you say into text, and pastes it and your mouse position.
+- Speech to text integrated in your computer; in any window or application.
+- It transforms what you say into text, and pastes it and your current active cursor position (a text input where your mouse is located).
+
 MVP for private use (Non Commercial).
 
 
+Notes:
+- In its default set up the program is made to run in Linux + Hyprland, implementation for windows is on the way; I can't test mac implementation. 
+- You have to install google chrome (if you haven't installed it already) to make the program work.
+A version that uses firefox or other browser will be (very) wellcome.
+
+- The current behavior is that the program is always running in the background, so you don't have to use any shortcut to activate it (is already listening)
+You can modify it and create another program version that does use a shortcut for activation (start to listening to transcript)
+
+
 Instructions:
-1 Open terminal and go to project folder
-2 Activate environment (for windows): venv/Scripts/activate
-3 Run program with: python main.py
-4 Let terminal running (minimize if needed)
-5 Speak, see the transcription at your mouse position
-6 Control C to stop execution
+- Open terminal and go to project folder
+- Activate environment (for windows): venv/Scripts/activate
+- Install needed packages with: pip install -r requirements.txt
+- Run program with: python main.py
+- Let terminal running (minimize if needed)
+- Speak, see the text transcription of your speech at your active text input
+- Control C (inside the terminal) to stop execution

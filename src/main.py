@@ -1,11 +1,13 @@
-from utils.lib.driver import create_normal_driver, grant_permissions
+from utils.lib.driver import create_driver, create_normal_driver, grant_permissions
 from utils.config import TARGET_URLS, XPATH_LIBRARY
-from utils.lib.text import get_text, paste_text
+from utils.lib.text import get_text, paste_text, paste_text_2, paste_text_3
 from selenium.webdriver.common.by import By
 from time import sleep
 import logging
 
+
 logging.basicConfig(filename='../logs.log', level=logging.DEBUG)
+HEADLESS = True
 
 
 def press_record_btn(d):
@@ -16,8 +18,8 @@ def press_record_btn(d):
 
 def run():
 
-    d = create_normal_driver()
-
+    d = create_normal_driver(headless=HEADLESS)
+    
     d.get(TARGET_URLS['dictation_url'])
 
     grant_permissions(d)  # microphone, geo location, camera
@@ -31,7 +33,7 @@ def run():
     while True:
         text = get_text(d)
 
-        paste_text(text)
+        paste_text_3(text)
 
 
 if __name__ == '__main__':

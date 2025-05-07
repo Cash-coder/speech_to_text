@@ -47,8 +47,7 @@ def grant_permissions(d):
         "Browser.grantPermissions",
         {
             "origin": TARGET_URLS['dictation_url'],
-            "permissions": ["geolocation", "audioCapture", "displayCapture", "videoCapture",
-                            "videoCapturePanTiltZoom"]
+            "permissions": ["geolocation", "audioCapture", "displayCapture", "videoCapture"]
         },
     )
 

@@ -6,8 +6,9 @@ from time import sleep
 import logging
 
 
-logging.basicConfig(filename='../logs.log', level=logging.DEBUG)
 HEADLESS = True
+
+logging.basicConfig(filename='../logs.log', level=logging.DEBUG)
 
 
 def press_record_btn(d):

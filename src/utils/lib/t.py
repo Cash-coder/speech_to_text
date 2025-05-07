@@ -8,7 +8,7 @@ def copy_to_clipboard(text):
             stdin=subprocess.PIPE,
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
-        )
+        ) 
         process.communicate(input=text.encode("utf-8"))
         # Ensure the process exits without issues
         if process.returncode != 0:

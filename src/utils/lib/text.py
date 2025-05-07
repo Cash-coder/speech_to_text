@@ -59,16 +59,28 @@ def paste_text(text):
     # pyperclip.copy(old_clipboard)
 
 def paste_text_3(text):
-    process = subprocess.run(
+    #process = subprocess.run(
         #['echo', f'{text}', '|', 'wl-copy']
-        ['wl-copy'],
-        input=text.encode('utf-8'),  # Pass text to stdin
+        #['wl-copy'],
+        #input=text.encode('utf-8'),  # Pass text to stdin
         #stdin=subprocess.PIPE,
         # stdout=subprocess.PIPE, 
         # stderr=subprocess.PIPE,
         # check=True
-    )
-    subprocess.run(["wtype", text]) 
+    #)
+
+    # if activated it creates a bug w primary selection sync
+    # is this is to log the result in the clipoard history ?
+    # process = subprocess.Popen(
+    # ['wl-copy'], 
+    # stdin=subprocess.PIPE,  # Pass input via stdin
+    # stdout=subprocess.PIPE, 
+    # stderr=subprocess.PIPE
+    # )
+    subprocess.run(["wtype", text])  
+    
+    #process.kill()
+
 
 
 def paste_text_2(text):

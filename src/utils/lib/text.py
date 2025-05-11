@@ -6,6 +6,15 @@ import pyperclip
 import subprocess
 
 
+COMMANDS = {
+    "pause execution": "pause",
+    "continue execution": "continue",
+    "switch to english": "lang_en",
+    "switch to spanish": "lang_es",
+    "end program": "stop"
+}
+
+
 def get_text(d):
 
     tm = d.find_element(By.XPATH, XPATH_LIBRARY['text_mirror'])

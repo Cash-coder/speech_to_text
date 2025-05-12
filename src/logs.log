@@ -2502,3 +2502,5 @@ INFO:WDM:====== WebDriver manager ======
 INFO:WDM:Get LATEST chromedriver version for google-chrome
 INFO:WDM:Get LATEST chromedriver version for google-chrome
 INFO:WDM:Driver [/home/ggk/.wdm/drivers/chromedriver/linux64/133.0.6943.141/chromedriver-linux64/chromedriver] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome

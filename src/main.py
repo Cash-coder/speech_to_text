@@ -1,20 +1,15 @@
 from utils.lib.driver import create_driver, create_normal_driver, grant_permissions
-from utils.config import TARGET_URLS, XPATH_LIBRARY
+from utils.config import TARGET_URLS, XPATH_LIBRARY, VOICE_COMMANDS
 from utils.lib.text import get_text, paste_text, paste_text_2, paste_text_3
 from selenium.webdriver.common.by import By
 from time import sleep
 import logging
+from selenium.webdriver.support.ui import Select
 
 # HEADLESS = False
 HEADLESS = True
 is_paused = False
 
-VOICE_COMMANDS = {
-    "stop execution": "pause",    
-    "start execution": "start",    
-    "switch to spanish": "ES",    
-    # "",    
-}
 
 logging.basicConfig(filename='../logs.log', level=logging.DEBUG)
 
@@ -32,28 +27,40 @@ def check_voice_command(text: str) -> bool | str:
     # return false if no command found
     return False
 
-def execute_command(command_code: str, d) -> None:
+def execute_command(d, command_code: str) -> None:
     """match command code with execution code and execute code"""
     import subprocess
     global is_paused
 
-    if command_code == 'pause':
-        is_paused = True
+    if command_code == 'toggle_record':
+        # is_paused = True
+        is_paused = not is_paused # toggle pause from true to false and viceversa
         print("command pause")
         print("is_paused is :", is_paused, "\n")
-        subprocess.run(["notify-send", "STT Off"])
-        # press_record_btn(d)
-
-    elif command_code == "start":
-        is_paused = False
-        print("Started TTS execution")
-        subprocess.run(["notify-send", "STT On"])
+        subprocess.run(["notify-send", "STT recording toggle"])
         # press_record_btn(d)
 
     elif command_code == 'ES':
         print("switching to Spanish")
-        subprocess.run(["notify-send", "Cambiando a Español", "Bienvenido =)"])
+        
+        d.find_element(By.XPATH, XPATH_LIBRARY['lan_selector']).click()
+        sleep(1)
+        d.find_element(By.XPATH, XPATH_LIBRARY['ES']).click()
+        sleep(1)
+        press_record_btn(d)
+        
+        subprocess.run(["notify-send", "Cambiando a Español | Bienvenido =)"])
 
+    elif command_code == 'EN':
+        print("switching to English")
+        
+        d.find_element(By.XPATH, XPATH_LIBRARY['lan_selector']).click()
+        sleep(1)
+        d.find_element(By.XPATH, XPATH_LIBRARY['EN']).click()
+        sleep(1)
+        press_record_btn(d)
+        
+        subprocess.run(["notify-send", "Cambiando a Inglés | Bienvenido =)"])
 
 def run():
 
@@ -66,8 +73,12 @@ def run():
     # open_second_tab(d, TARGET_URLS['grammar_url']) # open grammar tab
     # switch_to_american_english(d)
 
-    press_record_btn(d)
-    print('\nProgram running\n')
+    execute_command(d, "EN")
+    # press_record_btn(d)
+    print('\nProgram running!\n')
+    print("These are the voice commands:")
+    for command, action in VOICE_COMMANDS.items():
+        print(f" - '{command}' → {action}")
 
     while True:
         # get text from STT app UI
@@ -76,12 +87,11 @@ def run():
         # check if voice command is present in text
         command_code = check_voice_command(text)
         if command_code:
-            execute_command(command_code, d)
+            execute_command(d, command_code)
             # avoid pasting command code as text
             continue
 
         if is_paused is False:
-            print("is_paused is :", is_paused)
             paste_text_3(text)
 
 if __name__ == '__main__':

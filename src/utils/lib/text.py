@@ -60,6 +60,7 @@ def paste_text(text):
     # pyperclip.copy(old_clipboard)
 
 def paste_text_3(text):
+
     subprocess.run(["wtype", text])  
 
     #process = subprocess.run(

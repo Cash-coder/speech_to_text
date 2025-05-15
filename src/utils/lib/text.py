@@ -6,14 +6,6 @@ import pyperclip
 import subprocess
 
 
-COMMANDS = {
-    "pause execution": "pause",
-    "continue execution": "continue",
-    "switch to english": "lang_en",
-    "switch to spanish": "lang_es",
-    "end program": "stop"
-}
-
 
 def get_text(d):
 
@@ -68,6 +60,8 @@ def paste_text(text):
     # pyperclip.copy(old_clipboard)
 
 def paste_text_3(text):
+    subprocess.run(["wtype", text])  
+
     #process = subprocess.run(
         #['echo', f'{text}', '|', 'wl-copy']
         #['wl-copy'],
@@ -86,7 +80,6 @@ def paste_text_3(text):
     # stdout=subprocess.PIPE, 
     # stderr=subprocess.PIPE
     # )
-    subprocess.run(["wtype", text])  
     
     #process.kill()
 

@@ -7,6 +7,7 @@ import logging
 
 # HEADLESS = False
 HEADLESS = True
+is_paused = False
 
 VOICE_COMMANDS = {
     "stop execution": "pause",    
@@ -20,7 +21,6 @@ logging.basicConfig(filename='../logs.log', level=logging.DEBUG)
 def press_record_btn(d):
     sleep(2)
     d.find_element(By.XPATH, XPATH_LIBRARY['record_button']).click()
-    print('\nProgram running\n')
 
 def check_voice_command(text: str) -> bool | str:
     """Check if text contains any command and
@@ -35,16 +35,20 @@ def check_voice_command(text: str) -> bool | str:
 def execute_command(command_code: str, d) -> None:
     """match command code with execution code and execute code"""
     import subprocess
+    global is_paused
 
     if command_code == 'pause':
+        is_paused = True
         print("command pause")
-        subprocess.run(["notify-send", "STT Execution Paused"])
-        press_record_btn(d)
+        print("is_paused is :", is_paused, "\n")
+        subprocess.run(["notify-send", "STT Off"])
+        # press_record_btn(d)
 
     elif command_code == "start":
+        is_paused = False
         print("Started TTS execution")
-        subprocess.run(["notify-send", "STT Execution Started"])
-        press_record_btn(d)
+        subprocess.run(["notify-send", "STT On"])
+        # press_record_btn(d)
 
     elif command_code == 'ES':
         print("switching to Spanish")
@@ -63,6 +67,7 @@ def run():
     # switch_to_american_english(d)
 
     press_record_btn(d)
+    print('\nProgram running\n')
 
     while True:
         # get text from STT app UI
@@ -75,9 +80,9 @@ def run():
             # avoid pasting command code as text
             continue
 
-
-        paste_text_3(text)
-
+        if is_paused is False:
+            print("is_paused is :", is_paused)
+            paste_text_3(text)
 
 if __name__ == '__main__':
     run()

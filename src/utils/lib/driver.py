@@ -10,12 +10,16 @@ def create_normal_driver(headless= False):
     from selenium.webdriver.chrome.service import Service
     from webdriver_manager.chrome import ChromeDriverManager
 
+    print('\nCreating driver ...\n')
     opts = webdriver.ChromeOptions()
     if headless:
         opts.add_argument('--headless=new')
     # opts.add_argument('--disable-gpu')
 
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=opts)  #, options=chrome_options)
+
+    print('\nDriver created! =)\n')
+
     return driver
 
 
